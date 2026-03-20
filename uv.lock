@@ -2074,7 +2074,7 @@ requires-dist = [
     { name = "rotary-embedding-torch", specifier = ">=0.8.0,<0.9" },
     { name = "samplerate", specifier = ">=0.2.3,<0.3" },
     { name = "scipy", specifier = ">=1.9.3,<2" },
-    { name = "soundfile", specifier = ">=0.11.0,<0.12" },
+    { name = "soundfile", specifier = ">=0.11.0,<1.0" },
     { name = "tqdm" },
 ]
 
