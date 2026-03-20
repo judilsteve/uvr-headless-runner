@@ -2052,7 +2052,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "audioread", specifier = ">=3.0.0,<4" },
-    { name = "beartype", specifier = ">=0.15,<0.16" },
+    { name = "beartype", specifier = ">=0.15,<1.0" },
     { name = "diffq", specifier = ">=0.2.4,<0.3" },
     { name = "einops", specifier = ">=0.8.0,<0.9" },
     { name = "julius", specifier = ">=0.2.7,<0.3" },

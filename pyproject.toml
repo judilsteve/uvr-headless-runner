@@ -42,7 +42,7 @@ dependencies = [
     "onnx",
     "onnx2pytorch",
     "rotary-embedding-torch>=0.8.0,<0.9",
-    "beartype>=0.15,<0.16",
+    "beartype>=0.15,<1.0",
     "julius>=0.2.7,<0.3",
     "pydub>=0.25.1,<0.26",
     "pyrubberband>=0.3.0,<0.4",
