@@ -101,9 +101,6 @@ Desktop.ini
 *.temp
 *.log
 
-# Poetry
-poetry.lock
-
 # Jupyter Notebook
 .ipynb_checkpoints/
 
