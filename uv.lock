@@ -2056,7 +2056,7 @@ requires-dist = [
     { name = "diffq", specifier = ">=0.2.4,<0.3" },
     { name = "einops", specifier = ">=0.8.0,<0.9" },
     { name = "julius", specifier = ">=0.2.7,<0.3" },
-    { name = "librosa", specifier = ">=0.9.2,<0.10" },
+    { name = "librosa", specifier = ">=0.9.2,<1.0" },
     { name = "ml-collections", specifier = ">=0.1.1,<0.2" },
     { name = "natsort", specifier = ">=8.2.0,<9" },
     { name = "numpy", specifier = ">=1.23.5,<2" },
