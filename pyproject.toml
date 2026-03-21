@@ -29,7 +29,7 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
 ]
 dependencies = [
-    "numpy>=1.23.5,<2",
+    "numpy>=2,<3",
     "scipy>=1.9.3,<2",
     "librosa>=0.9.2,<1.0",
     "soundfile>=0.11.0,<1.0",
@@ -67,7 +67,10 @@ uvr-demucs = "demucs_headless_runner:main"
 uvr-vr = "vr_headless_runner:main"
 
 [dependency-groups]
-dev = ["pytest>=7.0,<8"]
+dev = [
+    "pytest>=7.0,<8",
+    "ruff>=0.15.7",
+]
 
 [tool.uv]
 default-groups = "all"
@@ -118,3 +121,7 @@ include = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.ruff.lint]
+select = ["E9", "F", "PLE"]
+ignore = ["F541", "F405", "F841", "F401", "F403", "F811"]
