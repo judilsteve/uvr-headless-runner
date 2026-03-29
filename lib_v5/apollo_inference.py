@@ -4,7 +4,7 @@ import lib_v5.apollo_model_data as models
 from tqdm.auto import tqdm
 import numpy as np
 from gui_data.constants import *
-from separate import (get_gpu_info, clear_gpu_cache,
+from uvr_headless_runner.separate import (get_gpu_info, clear_gpu_cache,
     cuda_available, directml_available, mps_available
 )
 

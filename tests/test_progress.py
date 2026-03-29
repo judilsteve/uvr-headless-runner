@@ -12,7 +12,7 @@ import pytest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from progress import ProgressStage, StageProgress, STAGE_DESCRIPTIONS, STAGE_COLORS
+from uvr_headless_runner.progress import ProgressStage, StageProgress, STAGE_DESCRIPTIONS, STAGE_COLORS
 
 
 # ============================================================================

@@ -39,7 +39,7 @@ from onnx2pytorch import ConvertModel
 import gc
 
 if TYPE_CHECKING:
-    from UVR import ModelData
+    from uvr_headless_runner.UVR import ModelData
 
 if not is_macos:
     try:

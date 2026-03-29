@@ -156,7 +156,7 @@ def print_info():
 
     # Proxy status
     try:
-        from model_downloader import is_proxy_configured
+        from uvr_headless_runner.model_downloader import is_proxy_configured
         print(f"\nProxy: {'Configured' if is_proxy_configured() else 'Not configured'}")
     except ImportError:
         pass

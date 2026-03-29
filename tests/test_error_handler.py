@@ -13,7 +13,7 @@ import pytest
 # 确保项目根目录在 path 中
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from error_handler import (
+from uvr_headless_runner.error_handler import (
     ErrorCategory,
     classify_error,
     format_error_message,

@@ -34,7 +34,7 @@ from pathlib import Path
 from types import SimpleNamespace
 
 # Import progress system
-from progress import (
+from uvr_headless_runner.progress import (
     ProgressManager, ProgressStage,
     create_progress_callbacks, create_download_progress_callback
 )
@@ -43,7 +43,7 @@ from progress import (
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # 导入必需的模块
-from separate import SeperateDemucs, prepare_mix
+from uvr_headless_runner.separate import SeperateDemucs, prepare_mix
 from gui_data.constants import (
     DEMUCS_ARCH_TYPE,
     DEMUCS_V1, DEMUCS_V2, DEMUCS_V3, DEMUCS_V4,
@@ -76,7 +76,7 @@ def _get_downloader():
     """Get or create model downloader instance."""
     global _downloader
     if _downloader is None:
-        from model_downloader import ModelDownloader
+        from uvr_headless_runner.model_downloader import ModelDownloader
         _downloader = ModelDownloader(base_path=SCRIPT_DIR, verbose=True)
     return _downloader
 
@@ -828,7 +828,7 @@ def main():
             return 1
     
     # Import error handler
-    from error_handler import (
+    from uvr_headless_runner.error_handler import (
         classify_error, format_error_message, ErrorCategory,
         validate_audio_file, validate_output_directory
     )
@@ -874,7 +874,7 @@ def main():
     with ProgressManager(verbose=not args.quiet) as pm:
         # 查找模型路径（支持自动下载，包含进度显示）
         try:
-            from progress import create_download_progress_callback
+            from uvr_headless_runner.progress import create_download_progress_callback
             download_callback = create_download_progress_callback(pm)
             model_path = resolve_model_path(
                 args.model, args.model_dir, 

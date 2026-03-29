@@ -12,7 +12,7 @@ import pytest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from model_downloader import (
+from uvr_headless_runner.model_downloader import (
     fuzzy_match_model,
     format_bytes,
     is_valid_model_file,

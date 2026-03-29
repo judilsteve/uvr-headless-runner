@@ -30,7 +30,7 @@ from tkinter.font import Font
 from tkinter import filedialog
 from tkinter import messagebox
 from collections import Counter
-from __version__ import VERSION, PATCH, PATCH_MAC, PATCH_LINUX
+from uvr_headless_runner.__version__ import VERSION, PATCH, PATCH_MAC, PATCH_LINUX
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
@@ -45,7 +45,7 @@ from lib_v5 import spec_utils
 from lib_v5 import apollo_inference
 from kthread import KThread
 from pathlib  import Path
-from separate import (
+from uvr_headless_runner.separate import (
     SeperateDemucs, SeperateMDX, SeperateMDXC, SeperateVR,  # Model-related
     save_format, clear_gpu_cache,  # Utility functions
     cuda_available, directml_available, mps_available

@@ -11,7 +11,7 @@ import pytest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from cli import (
+from uvr_headless_runner.cli import (
     VERSION,
     print_banner,
     print_usage,
