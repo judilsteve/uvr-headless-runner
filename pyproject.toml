@@ -3,7 +3,7 @@ name = "uvr-headless-runner"
 version = "1.1.0"
 description = "CLI audio source separation powered by Ultimate Vocal Remover — separate vocals, instruments, drums from any audio"
 authors = [{ name = "UVR Headless Runner Contributors" }]
-requires-python = ">=3.9,<4,<3.11"
+requires-python = ">=3.9,<3.11"
 readme = "README.md"
 license = "MIT"
 keywords = [
@@ -77,6 +77,7 @@ default-groups = "all"
 
 [tool.hatch.build.targets.sdist]
 include = [
+    "__init__.py",
     "cli.py",
     "mdx_headless_runner.py",
     "demucs_headless_runner.py",
@@ -102,7 +103,9 @@ include = [
 "gui_data/**/*.txt" = "gui_data/**/*.txt"
 
 [tool.hatch.build.targets.wheel]
+packages = ["."]
 include = [
+    "__init__.py",
     "cli.py",
     "mdx_headless_runner.py",
     "demucs_headless_runner.py",
