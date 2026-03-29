@@ -77,17 +77,6 @@ default-groups = "all"
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "__init__.py",
-    "cli.py",
-    "mdx_headless_runner.py",
-    "demucs_headless_runner.py",
-    "vr_headless_runner.py",
-    "model_downloader.py",
-    "error_handler.py",
-    "progress.py",
-    "separate.py",
-    "UVR.py",
-    "__version__.py",
     "demucs",
     "lib_v5",
     "gui_data",
@@ -103,7 +92,7 @@ include = [
 "gui_data/**/*.txt" = "gui_data/**/*.txt"
 
 [tool.hatch.build.targets.wheel]
-packages = ["."]
+packages = ["uvr_headless_runner"]
 include = [
     "__init__.py",
     "cli.py",
